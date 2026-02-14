@@ -5,3 +5,4 @@ for i in range(n):
     match_pct = len(resume & required) / len(required) * 100
     missing = required - resume
     print(f"Resume {i+1}: {match_pct:.0f}% match, Missing: {missing if missing else 'None'}")
+   

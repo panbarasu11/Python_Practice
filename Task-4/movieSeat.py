@@ -4,3 +4,5 @@ fully_booked = [t for t, seats in bookings.items() if len(seats) == len(all_seat
 common_seats = set(bookings[next(iter(bookings))]).intersection(*bookings.values()) if bookings and len(bookings) > 1 else (set(bookings[next(iter(bookings))]) if bookings else set())
 print(f"Fully booked: {fully_booked if fully_booked else 'None'}")
 print(f"Booked in every show: {common_seats if common_seats else 'None'}")
+print(f"Total unique seats booked: {len(all_seats)}")
+print
